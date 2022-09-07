@@ -4,7 +4,7 @@
 
   ## Description
 
-  The purpose of this app is to automatically create a professional README file for any project. This is achieved by using Inquirer.js prompts in the user's terminal.
+  Use this app to create README files for a project.
 
   ## Table of Contents
 
@@ -21,13 +21,7 @@
 
   ## Usage
 
-  Install node.js on your computer.
-  
-  Run `npm i inquirer` in the terminal
-
-  Then run `node index.js` in the terminal for the prompts
-
-  ![Terminal Screenshot](/assets/images/terminal.JPG)
+  Install node.js on your computer, run `npm i inquirer` in the terminal, and then run `node index.js` 
 
   ## Credits
 
@@ -45,5 +39,5 @@
 
   For more information regarding this project, please send an email to katsomsanith@gmail.com.
 
-  Click [here](https://github.com/KatSKang) to see more works from KatSKang.
+  Click [here](https://github.com/KatSKang) to see more works from katskang.
 
