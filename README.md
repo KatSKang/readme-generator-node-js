@@ -27,6 +27,8 @@
 
   Then run `node index.js` in the terminal for the prompts
 
+  Click [here](https://youtu.be/QDeUY2f8EcE) for the video walkthough.
+
   ![Terminal Screenshot](/assets/images/terminal.JPG)
 
   ## Credits
