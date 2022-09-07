@@ -19,17 +19,12 @@ const questions = [
     },
     {
         type: "input",
-        message: "Please provide a Table of Contents for your project.",
-        name: "contents",
-    },
-    {
-        type: "input",
         message: "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.",
         name: "installation",
     },
     {
         type: "input",
-        message: "Provide instructions and examples for use. Include screenshots as needed.",
+        message: "Provide instructions and examples for use.",
         name: "usage",
     },
     {
@@ -67,14 +62,16 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    let userProject = fileName;
-    fs.writeFileSync(userProject,data);
+    fs.writeFileSync(fileName, data, (err) => 
+    err ? console.error(err) : console.log('Success!'));
 }
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-        .then((res) => fs.writeFile('newREADME.md',generateMarkdown(res)));
+        .then((res) => {
+            writeToFile('newREADME.md',generateMarkdown(res));
+        })
 }
 
 // Function call to initialize app
